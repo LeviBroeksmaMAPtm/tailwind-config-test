@@ -1,0 +1,11 @@
+.vscode
+node_modules
+__pycache__
+/venv
+/frontend/dist
+/frontend/assets/tailwind.css
+*.bak
+*.old
+/backend/temp*.py
+/backend/chalicelib/temp*.py
+/frontend/src/components/example

@@ -1,0 +1,24 @@
+<div id="sidebar"
+  class="flex flex-row static h-full w-12 px-2 pt-6 bg-gray-700 text-gray-400 text-sm flex-no-wrap overflow-x-hidden">
+  <ul class="space-y-8 align-middle no-underline">
+    <li id="s_home">
+      <a href="/"
+        class="flex items-center text-orange-600 hover:text-orange-600 nav_item nav_home">
+        <svg class="fill-current h-8 w-8" viewBox="0 0 24 24">
+          <path d="M12 5.69L17 10.19V18H15V12H9V18H7V10.19L12 5.69M12 3L2 12H5V20H11V14H13V20H19V12H22L12 3Z" />
+        </svg>
+        <span class="ml-3">Thuis</span>
+      </a>
+    </li>
+    <li>
+      <a href="javascript:logOutUser();"
+        class="flex items-center hover:text-orange-600 nav_item nav_logout">
+        <svg class="fill-current h-8 w-8" viewBox="0 0 24 24">
+          <path d="M22 12L18 8V11H10V13H18V16M20 18A10 10 0 1 1 20 6H17.27A8 8 0 1 0 17.27 18Z" />
+        </svg>
+        <span class="ml-3">Uitloggen</span>
+      </a>
+    </li>
+  </ul>
+  <div class="flex flex-row absolute bottom-0" id="app_version"></div>
+</div>

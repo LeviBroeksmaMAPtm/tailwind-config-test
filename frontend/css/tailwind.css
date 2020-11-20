@@ -1,0 +1,19 @@
+/* purgecss start ignore */
+@tailwind base;
+
+/* Your own custom base styles */
+/* h1 { ... } */
+/* a { ... } */
+
+@tailwind components;
+
+/* Your own custom component styles */
+/* .btn { ... } */
+/* .card { ... } */
+
+/* purgecss end ignore */
+
+@tailwind utilities;
+
+/* Your own custom utilities */
+/* .text-shadow-sm { ... } */

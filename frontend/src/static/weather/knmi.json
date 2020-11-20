@@ -1,0 +1,545 @@
+{
+  "stations": {
+    "391": {
+      "lon": 6.197,
+      "lat": 51.498,
+      "alt": 19.50,
+      "name": "ARCEN"
+    },
+    "370": {
+      "lon": 5.377,
+      "lat": 51.451,
+      "alt": 22.60,
+      "name": "EINDHOVEN"
+    },
+    "331": {
+      "lon": 4.193,
+      "lat": 51.480,
+      "alt": 0.00,
+      "name": "THOLEN"
+    },
+    "315": {
+      "lon": 3.998,
+      "lat": 51.447,
+      "alt": 0.00,
+      "name": "HANSWEERT"
+    },
+    "324": {
+      "lon": 4.006,
+      "lat": 51.596,
+      "alt": 0.00,
+      "name": "STAVENISSE"
+    },
+    "375": {
+      "lon": 5.707,
+      "lat": 51.659,
+      "alt": 22.00,
+      "name": "VOLKEL"
+    },
+    "380": {
+      "lon": 5.762,
+      "lat": 50.906,
+      "alt": 114.30,
+      "name": "MAASTRICHT"
+    },
+    "240": {
+      "lon": 4.790,
+      "lat": 52.318,
+      "alt": -3.30,
+      "name": "SCHIPHOL"
+    },
+    "286": {
+      "lon": 7.150,
+      "lat": 53.196,
+      "alt": -0.20,
+      "name": "NIEUW BEERTA"
+    },
+    "310": {
+      "lon": 3.596,
+      "lat": 51.442,
+      "alt": 8.00,
+      "name": "VLISSINGEN"
+    },
+    "283": {
+      "lon": 6.657,
+      "lat": 52.069,
+      "alt": 29.10,
+      "name": "HUPSEL"
+    },
+    "280": {
+      "lon": 6.585,
+      "lat": 53.125,
+      "alt": 5.20,
+      "name": "EELDE"
+    },
+    "273": {
+      "lon": 5.888,
+      "lat": 52.703,
+      "alt": -3.30,
+      "name": "MARKNESSE"
+    },
+    "323": {
+      "lon": 3.884,
+      "lat": 51.527,
+      "alt": 1.40,
+      "name": "WILHELMINADORP"
+    },
+    "249": {
+      "lon": 4.979,
+      "lat": 52.644,
+      "alt": -2.40,
+      "name": "BERKHOUT"
+    },
+    "377": {
+      "lon": 5.763,
+      "lat": 51.198,
+      "alt": 30.00,
+      "name": "ELL"
+    },
+    "316": {
+      "lon": 3.694,
+      "lat": 51.657,
+      "alt": 0.00,
+      "name": "SCHAAR"
+    },
+    "313": {
+      "lon": 3.242,
+      "lat": 51.505,
+      "alt": 0.00,
+      "name": "VLAKTE V.D. RAAN"
+    },
+    "277": {
+      "lon": 6.200,
+      "lat": 53.413,
+      "alt": 2.90,
+      "name": "LAUWERSOOG"
+    },
+    "348": {
+      "lon": 4.926,
+      "lat": 51.970,
+      "alt": -0.70,
+      "name": "CABAUW"
+    },
+    "308": {
+      "lon": 3.379,
+      "lat": 51.381,
+      "alt": 0.00,
+      "name": "CADZAND"
+    },
+    "319": {
+      "lon": 3.861,
+      "lat": 51.226,
+      "alt": 1.70,
+      "name": "WESTDORPE"
+    },
+    "215": {
+      "lon": 4.437,
+      "lat": 52.141,
+      "alt": -1.10,
+      "name": "VOORSCHOTEN"
+    },
+    "278": {
+      "lon": 6.259,
+      "lat": 52.435,
+      "alt": 3.60,
+      "name": "HEINO"
+    },
+    "285": {
+      "lon": 6.399,
+      "lat": 53.575,
+      "alt": 0.00,
+      "name": "HUIBERTGAT"
+    },
+    "343": {
+      "lon": 4.313,
+      "lat": 51.893,
+      "alt": 3.50,
+      "name": "R'DAM-GEULHAVEN"
+    },
+    "225": {
+      "lon": 4.555,
+      "lat": 52.463,
+      "alt": 4.40,
+      "name": "IJMUIDEN"
+    },
+    "330": {
+      "lon": 4.122,
+      "lat": 51.992,
+      "alt": 11.90,
+      "name": "HOEK VAN HOLLAND"
+    },
+    "267": {
+      "lon": 5.384,
+      "lat": 52.898,
+      "alt": -1.30,
+      "name": "STAVOREN"
+    },
+    "269": {
+      "lon": 5.520,
+      "lat": 52.458,
+      "alt": -3.70,
+      "name": "LELYSTAD"
+    },
+    "344": {
+      "lon": 4.447,
+      "lat": 51.962,
+      "alt": -4.30,
+      "name": "ROTTERDAM"
+    },
+    "275": {
+      "lon": 5.873,
+      "lat": 52.056,
+      "alt": 48.20,
+      "name": "DEELEN"
+    },
+    "235": {
+      "lon": 4.781,
+      "lat": 52.928,
+      "alt": 1.20,
+      "name": "DE KOOY"
+    },
+    "257": {
+      "lon": 4.603,
+      "lat": 52.506,
+      "alt": 8.50,
+      "name": "WIJK AAN ZEE"
+    },
+    "290": {
+      "lon": 6.891,
+      "lat": 52.274,
+      "alt": 34.80,
+      "name": "TWENTHE"
+    },
+    "350": {
+      "lon": 4.936,
+      "lat": 51.566,
+      "alt": 14.90,
+      "name": "GILZE-RIJEN"
+    },
+    "251": {
+      "lon": 5.346,
+      "lat": 53.392,
+      "alt": 0.70,
+      "name": "HOORN (TERSCHELLING)"
+    },
+    "210": {
+      "lon": 4.430,
+      "lat": 52.171,
+      "alt": -0.20,
+      "name": "VALKENBURG"
+    },
+    "248": {
+      "lon": 5.174,
+      "lat": 52.634,
+      "alt": 0.80,
+      "name": "WIJDENES"
+    },
+    "279": {
+      "lon": 6.574,
+      "lat": 52.750,
+      "alt": 15.80,
+      "name": "HOOGEVEEN"
+    },
+    "258": {
+      "lon": 5.401,
+      "lat": 52.649,
+      "alt": 7.30,
+      "name": "HOUTRIBDIJK"
+    },
+    "356": {
+      "lon": 5.146,
+      "lat": 51.859,
+      "alt": 0.70,
+      "name": "HERWIJNEN"
+    },
+    "209": {
+      "lon": 4.518,
+      "lat": 52.465,
+      "alt": 0.00,
+      "name": "IJMOND"
+    },
+    "265": {
+      "lon": 5.274,
+      "lat": 52.130,
+      "alt": 13.90,
+      "name": "SOESTERBERG"
+    },
+    "312": {
+      "lon": 3.622,
+      "lat": 51.768,
+      "alt": 0.00,
+      "name": "OOSTERSCHELDE"
+    },
+    "340": {
+      "lon": 4.342,
+      "lat": 51.449,
+      "alt": 19.20,
+      "name": "WOENSDRECHT"
+    },
+    "260": {
+      "lon": 5.180,
+      "lat": 52.100,
+      "alt": 1.90,
+      "name": "DE BILT"
+    },
+    "270": {
+      "lon": 5.752,
+      "lat": 53.224,
+      "alt": 1.20,
+      "name": "LEEUWARDEN"
+    },
+    "311": {
+      "lon": 3.672,
+      "lat": 51.379,
+      "alt": 0.00,
+      "name": "HOOFDPLAAT"
+    },
+    "242": {
+      "lon": 4.921,
+      "lat": 53.241,
+      "alt": 10.80,
+      "name": "VLIELAND"
+    }
+  },
+  "ww": {
+    "01": "onbewolkt",
+    "02": "onbewolkt",
+    "03": "licht bewolkt",
+    "04": "rook / zichtvermindering door",
+    "05": "heiigheid",
+    "06": "zwevend stof",
+    "07": "stof of zand, inde lucht door wind",
+    "08": "stof of zandhoosje",
+    "10": "nevel",
+    "11": "grondmist",
+    "12": "grondmist",
+    "17": "onweer (zonder neerslag)",
+    "18": "zware windstoten",
+    "19": "water- of windhoos",
+    "20": "motregen",
+    "21": "regen",
+    "22": "sneeuw",
+    "23": "regen en sneeuw",
+    "24": "regen met ijzel",
+    "25": "regenbui",
+    "26": "sneeuwbui",
+    "27": "hagelbui",
+    "28": "mist",
+    "29": "onweer",
+    "30": "stof of zandstorm of driftsneeuw",
+    "31": "stof of zandstorm of driftsneeuw",
+    "32": "stof of zandstorm of driftsneeuw",
+    "33": "stof of zandstorm of driftsneeuw",
+    "34": "stof of zandstorm of driftsneeuw",
+    "35": "stof of zandstorm of driftsneeuw",
+    "36": "stof of zandstorm of driftsneeuw",
+    "37": "stof of zandstorm of driftsneeuw",
+    "38": "stof of zandstorm of driftsneeuw",
+    "39": "stof of zandstorm of driftsneeuw",
+    "40": "mist tijdens de waarneming",
+    "41": "mist tijdens de waarneming",
+    "42": "mist tijdens de waarneming",
+    "43": "mist tijdens de waarneming",
+    "44": "mist tijdens de waarneming",
+    "45": "mist tijdens de waarneming",
+    "46": "mist tijdens de waarneming",
+    "47": "mist tijdens de waarneming",
+    "48": "mist tijdens de waarneming",
+    "49": "mist tijdens de waarneming",
+    "50": "motregen, licht tijdens de waarneming",
+    "51": "motregen, licht tijdens de waarneming",
+    "52": "motregen, matig tijdens de waarneming",
+    "53": "motregen, matig tijdens de waarneming",
+    "54": "motregen",
+    "55": "motregen",
+    "56": "motregen met ijzel",
+    "57": "motregen met ijzel, dicht",
+    "58": "motregen en regen, licht",
+    "59": "motregen en regen, zwaar",
+    "60": "regen, licht",
+    "61": "regen, licht",
+    "62": "regen, matig",
+    "63": "regen, matig",
+    "64": "tregen, zwaar",
+    "65": "tregen, zwaar",
+    "66": "regen met ijzel",
+    "67": "regen met ijzel, zwaar",
+    "68": "regen en sneeuw",
+    "69": "regen en sneeuw, zwaar",
+    "70": "sneeuw, licht",
+    "71": "sneeuw, licht",
+    "72": "sneeuw, matig",
+    "73": "sneeuw, matig",
+    "74": "sneeuw, zwaar",
+    "75": "sneeuw, zwaar",
+    "77": "motsneeuw",
+    "79": "ijsregen",
+    "80": "regenbui",
+    "81": "zware regenbui",
+    "82": "wolkbreuk",
+    "84": "regenbuien zeer hevig, wolkbreuk of regen van tijd tot tijd zeer zwaar",
+    "83": "bui met regen en sneeuw",
+    "84": "bui met regen en sneeuw, zwaar",
+    "85": "sneeuwbui",
+    "86": "sneeuwbui, zwaar",
+    "87": "bui met korrelhagel of korrelsneeuw",
+    "88": "bui met korrelhagel of korrelsneeuw",
+    "89": "hagelbui",
+    "90": "zware hagelbui",
+    "91": "regen na onweer",
+    "92": "zware regen na onweer",
+    "93": "hagel na onweer",
+    "94": "zware hagel na onweer",
+    "95": "onweer",
+    "96": "onweer met hagel",
+    "97": "zwaar onweer",
+    "98": "onweer met stof- of zandstorm",
+    "99": "zwaar onweer met hagel"
+  },
+  "ww-10": {
+    "01": "onbewolkt",
+    "02": "onbewolkt",
+    "03": "licht bewolkt",
+    "04": "heiigheid, stof of rook, zicht ≥ 1 km",
+    "05": "heiigheid, stof of rook, zicht ≤ 1 km",
+    "10": "nevel",
+    "11": "ijsnaalden, ijsplaatjes",
+    "12": "weerlicht of bliksem op afstand",
+    "18": "langdurige, zware windstoten",
+    "20": "mist",
+    "21": "neerslag",
+    "22": "motregen(sneeuw), niet onderkoeld",
+    "23": "regen, niet onderkoeld",
+    "24": "sneeuw",
+    "25": "onderkoelde regen of motregen",
+    "26": "onweer, met of zonder neerslag",
+    "27": "driftsneeuw of opwaaiend zand",
+    "28": "idem, zicht ≥ 1 km",
+    "29": "idem, zicht ≤ 1 km",
+    "30": "mist",
+    "40": "neerslag",
+    "41": "neerslag, licht",
+    "42": "neerslag, matig - zwaar",
+    "43": "vloeibare neerslag, licht / matig",
+    "44": "vloeibare neerslag, zwaar",
+    "45": "vaste neerslag, licht / matig",
+    "46": "vaste neerslag, zwaar",
+    "47": "onderkoelde neerslag, licht / matig",
+    "48": "onderkoelde neerslag, zwaar",
+    "50": "motregen",
+    "51": "motregen niet onderkoeld, licht",
+    "52": "motregen niet onderkoeld, matig",
+    "53": "motregen niet onderkoeld, dicht",
+    "54": "motregen onderkoeld, licht",
+    "55": "motregen onderkoeld, matig",
+    "56": "motregen onderkoeld, dicht",
+    "57": "motregen en regen, licht",
+    "58": "motregen en regen, matig / zwaar",
+    "60": "regen",
+    "61": "regen niet onderkoeld, licht",
+    "62": "regen niet onderkoeld, matig",
+    "63": "regen niet onderkoeld, zwaar",
+    "64": "regen onderkoeld, licht",
+    "65": "regen onderkoeld, matig",
+    "66": "regen onderkoeld, zwaar",
+    "67": "regen (of motregen) en sneeuw, licht",
+    "68": "regen (of motregen) en sneeuw, matig / zwaar",
+    "70": "sneeuw",
+    "71": "sneeuw, licht",
+    "72": "sneeuw, matig",
+    "73": "sneeuw, zwaar",
+    "74": "ijsregen, licht",
+    "75": "ijsregen, matig",
+    "76": "ijsregen, zwaar",
+    "77": "motsneeuw",
+    "81": "regenbuien of regen van tijd tot tijd, licht",
+    "82": "regenbuien of regen van tijd tot tijd, matig",
+    "83": "regenbuien of regen van tijd tot tijd, zwaar",
+    "84": "regenbuien zeer hevig, wolkbreuk of regen van tijd tot tijd zeer zwaar",
+    "85": "sneeuw(buien) van tijd tot tijd, licht",
+    "86": "sneeuw(buien) van tijd tot tijd, matig",
+    "87": "sneeuw(buien) van tijd tot tijd, zwaar",
+    "89": "hagel",
+    "90": "onweer",
+    "91": "onweer, licht / matig zonder neerslag",
+    "92": "onweer, licht / matig met regen",
+    "93": "onweer, licht / matig met hagel",
+    "94": "onweer, zwaar zonder neerslag",
+    "95": "onweer, zwaar met regen",
+    "96": "onweer, zwaar met hagel",
+    "99": "tornado"
+  },
+  "ww-10-short": {
+    "01": "onbewolkt",
+    "02": "onbewolkt",
+    "03": "licht bewolkt",
+    "04": "heiigheid",
+    "05": "heiigheid",
+    "10": "nevel",
+    "11": "ijsnaalden/ ijsplaatjes",
+    "12": "weerlicht of bliksem op afstand",
+    "18": "langdurige zware windstoten",
+    "20": "mist",
+    "21": "neerslag",
+    "22": "motregen(sneeuw)",
+    "23": "regen",
+    "24": "sneeuw",
+    "25": "regen of motregen",
+    "26": "onweer",
+    "27": "driftsneeuw of opwaaiend zand",
+    "28": "driftsneeuw of opwaaiend zand",
+    "29": "driftsneeuw of opwaaiend zand",
+    "30": "mist",
+    "40": "neerslag",
+    "41": "lichte neerslag",
+    "42": "matige/zware neerslag",
+    "43": "lichte/matige neerslag",
+    "44": "zware neerslag",
+    "45": "lichte/matige neerslag",
+    "46": "zware neerslag",
+    "47": "lichte/matige neerslag",
+    "48": "zware neerslag",
+    "50": "motregen",
+    "51": "lichte motregen",
+    "52": "matige motregen",
+    "53": "dichte motregen",
+    "54": "lichte motregen",
+    "55": "matige motregen",
+    "56": "dichte motregen",
+    "57": "lichte motregen met regen",
+    "58": "matige/zware motregen met regen",
+    "60": "regen",
+    "61": "lichte regen",
+    "62": "matige regen",
+    "63": "zware regen",
+    "64": "lichte regen",
+    "65": "matige regen",
+    "66": "zware regen",
+    "67": "lichte regen en sneeuw",
+    "68": "matige/zware regen en sneeuw",
+    "70": "sneeuw",
+    "71": "lichte sneeuw",
+    "72": "matige sneeuw",
+    "73": "zware sneeuw",
+    "74": "lichte ijsregen",
+    "75": "matige ijsregen",
+    "76": "zware ijsregen",
+    "77": "motsneeuw",
+    "81": "lichte regenbuien",
+    "82": "matige regenbuien",
+    "83": "zware regenbuien",
+    "84": "wolkbreuk",
+    "85": "lichte sneeuw(buien)",
+    "86": "matige sneeuw(buien)",
+    "87": "zware sneeuw(buien)",
+    "89": "hagel",
+    "90": "onweer",
+    "91": "licht/matig onweer zonder neerslag",
+    "92": "licht/matig onweer met regen",
+    "93": "licht/matig onweer met hagel",
+    "94": "zwaar onweer zonder neerslag",
+    "95": "zwaar onweer met regen",
+    "96": "zwaar onweer met hagel",
+    "99": "tornado"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "tailwind-template-project",
+  "version": "0.0.1",
+  "main": "./dist/index.html",
+  "scripts": {
+    "build-dev": "SET NODE_ENV=development && gulp build",
+    "build-prod": "SET NODE_ENV=production && gulp build",
+    "serve-dev": "SET NODE_ENV=development && gulp serve",
+    "serve-prod": "SET NODE_ENV=production && gulp serve",
+    "serve-dev-fde": "SET NODE_ENV=development && gulp serve --browser fde",
+    "serve-prod-fde": "SET NODE_ENV=production && gulp serve --browser fde"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^10.0.2",
+    "browser-sync": "^2.26.13",
+    "cssnano": "^4.1.10",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-file-include": "^2.2.2",
+    "gulp-inline-source": "^4.0.0",
+    "gulp-postcss": "^9.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-terser": "^2.0.0",
+    "postcss": "^8.1.8",
+    "tailwindcss": "^2.0.1"
+  },
+  "author": "Martijn Harmenzon"
+}

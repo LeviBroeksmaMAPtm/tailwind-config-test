@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <meta name="description" content="Bereikbaarheidsmeter">
+  <meta name="author" content="Co-authored by Martijn Harmenzon, Anton Wijbenga, Tessel van Ballegooijen">
+
+  <title>Bereikbaarheidsmeter | Beheer</title>
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+  <link rel="manifest" href="/icons/site.webmanifest">
+  <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="/icons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="/icons/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Configuration -->
+  <script defer src="./config.min.js" inline></script>
+
+  <!-- Tailwind CSS -->
+  <link rel="stylesheet" href="./assets/tailwind.min.css" inline>
+
+  <!-- AWS Cognito -->
+  <script defer src="./assets/aws-sdk-2.610.0.min.js"></script>
+  <script defer src="./assets/amazon-cognito-identity.min.js"></script>
+  <script defer src="./assets/maptm_cognito.js"></script>
+
+  <!-- Alpine.js -->
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.7.0/dist/alpine.min.js" defer></script>
+
+  <!-- Diff.js -->
+  <script defer src="./assets/diff.js"></script>
+
+  <!-- Helper functions -->
+  <script defer src="./assets/helper_functions.js"></script>
+
+  <!-- Main -->
+  <link rel="stylesheet" href="./main.min.css" inline>
+  <script defer src="./main.min.js" inline></script>
+
+  <!-- Other JavaScript dependencies -->
+
+</head>
+
+<body data-app="home">
+
+  <div class="flex bg-gray-200 h-screen">
+
+    <div class="relative w-20">
+      @@include('./_imports/alpine-sidebar.html')
+    </div>
+
+    <div x-data="{ tab: 'users' }" class="flex-1 flex flex-col">
+      <header class="h-20 px-6 py-2 bg-cool-gray-100">
+        <div>
+          <div class="border-b border-gray-200">
+            <nav class="-mb-px flex">
+              <a :class="
+                  tab === 'users'
+                  ? ' border-blue-500 text-blue-600 focus:text-blue-800 focus:border-blue-700'
+                  : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:text-gray-700 focus:border-gray-300'"
+                @click="tab = 'users'" href="#"
+                class="w-1/4 py-4 px-1 text-center border-b-2 font-medium text-sm leading-5 focus:outline-none"
+                aria-current="page">
+                Gebruikers
+              </a>
+              <a :class="
+                  tab === 'projects'
+                  ? ' border-blue-500 text-blue-600 focus:text-blue-800 focus:border-blue-700'
+                  : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:text-gray-700 focus:border-gray-300'"
+                @click="tab = 'projects'" href="#"
+                class="w-1/4 py-4 px-1 text-center border-b-2 font-medium text-sm leading-5">
+                Projecten
+              </a>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <main class="flex-1 px-6">
+        Hello World!
+      </main>
+
+      <!-- <footer class="h-20 flex items-center px-6 bg-white">Footer</footer> -->
+      <footer>
+        @@include('./_imports/alpine-footer.html')
+      </footer>
+    </div>
+  </div>
+
+  <!-- Template Header -->
+  <!-- @@include('./_imports/header_template.html') -->
+
+  <!-- Template Sidebar -->
+  <!-- @@include('./_imports/sidebar_template.html') -->
+
+  <!-- Alpine.js dependencies -->
+  <script src="./_imports/alpine_func_footer.min.js"></script>
+  <!-- <script src="./alpine_func_users.min.js"></script> -->
+  <!-- <script src="./alpine_func_projects.min.js"></script> -->
+</body>
+
+</html>
