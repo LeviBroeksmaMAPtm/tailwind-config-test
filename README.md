@@ -4,7 +4,7 @@ Tailwind CSS/UI template project. Based on Bereikbaarheidsmeter Amsterdam (v2020
 
 To start a new project. 
 
-    Fork this repo.
+    Fork(!) this repo.
     Initiate project using terminal and yarn with the following command sequence
         cd frontend
         yarn install -D
