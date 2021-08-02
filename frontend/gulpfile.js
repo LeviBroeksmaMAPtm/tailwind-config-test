@@ -300,7 +300,7 @@ exports.serve = serve;
 // Build
 let add_sourcemaps = false;
 
-if (process.env.NODE_ENV.trim() === 'production') {
+if (process.env.NODE_ENV && process.env.NODE_ENV.trim() === 'production') {
   console.log('Building prodution...');
 
   exports.build = series(
