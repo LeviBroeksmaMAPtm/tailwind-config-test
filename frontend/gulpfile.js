@@ -142,7 +142,7 @@ function uglify_js() {
       '!./src/assets/**/*.js',
       '!./src/components/**/temp_*/'
     ], {
-      sourcemaps: true
+      sourcemaps: add_sourcemaps
     })
     // .pipe(concat('bundle.js'))
     .pipe(terser({
@@ -156,7 +156,7 @@ function uglify_js() {
     )
     .pipe(
       gulp.dest('./dist/', {
-        sourcemaps: true
+        sourcemaps: add_sourcemaps
       })
     );
 }
@@ -298,6 +298,8 @@ exports.serve = serve;
  */
 
 // Build
+let add_sourcemaps = false;
+
 if (process.env.NODE_ENV.trim() === 'production') {
   console.log('Building prodution...');
 
@@ -321,6 +323,8 @@ if (process.env.NODE_ENV.trim() === 'production') {
   );
 } else {
   console.log('Building development...');
+
+  add_sourcemaps = true;
 
   exports.build = series(
     clean_dist,
