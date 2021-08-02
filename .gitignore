@@ -9,3 +9,4 @@ __pycache__
 /backend/temp*.py
 /backend/chalicelib/temp*.py
 /frontend/src/components/example
+.yarn
