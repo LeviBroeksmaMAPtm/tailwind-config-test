@@ -4,12 +4,12 @@
   "main": "./dist/index.html",
   "packageManager": "yarn@3.0.0",
   "scripts": {
-    "build-dev": "SET NODE_ENV=development && gulp build",
-    "build-prod": "SET NODE_ENV=production && gulp build",
-    "serve-dev": "SET NODE_ENV=development && gulp serve",
-    "serve-prod": "SET NODE_ENV=production && gulp serve",
-    "serve-dev-fde": "SET NODE_ENV=development && gulp serve --browser fde",
-    "serve-prod-fde": "SET NODE_ENV=production && gulp serve --browser fde"
+    "build-dev": "NODE_ENV=development && gulp build",
+    "build-prod": "NODE_ENV=production && gulp build",
+    "serve-dev": "NODE_ENV=development && gulp serve",
+    "serve-prod": "NODE_ENV=production && gulp serve",
+    "serve-dev-fde": "NODE_ENV=development && gulp serve --browser fde",
+    "serve-prod-fde": "NODE_ENV=production && gulp serve --browser fde"
   },
   "author": "",
   "devDependencies": {
