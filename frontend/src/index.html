@@ -50,10 +50,9 @@
 
 </head>
 
-<body data-app="home">
+<body data-app="home" class="bg-violet-50 min-h-screen ">
   <!-- application header -->
-  <div class="flex bg-violet-50 h-screen" x-data="{show: false}" >
-
+  <div class="flex" x-data="{show: false}" >
     <header class="w-full h-24 flex items-center px-8 justify-end bg-gradient-to-bl from-gray-900 to-gray-700  lg:px-16 xl:px-24 shadow-lg">
       <!-- mobile menu -->
       <div class="sm:hidden">
@@ -101,7 +100,19 @@
         </nav>
       </div>
     </header>
+  </div>
 
+
+  <div class="w-full p-8">
+    <section class="grid grid-cols-5 justify-between">
+      <div class="h-40 w-40 bg-violet-900 rounded-xl col-span-2">
+
+      </div>
+      <div class="col-span-3 flex flex-col justify-center">
+        <h1 class="text-2xl font-bold"><span class="inline text-violet-700">Levi</span> <span class="inline text-gray-800">Broeksma</span></h1>
+        <h5 class="text-gray=500 italic">Front-end developer</h5>
+      </div>
+    </section>
   </div>
 
 
