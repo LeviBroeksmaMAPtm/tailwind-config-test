@@ -54,53 +54,15 @@
 
   <div class="flex bg-gray-200 h-screen">
 
-    <div class="relative w-20">
-      @@include('./_imports/alpine-sidebar.html')
-    </div>
+    <header class="w-full h-24 bg-gray-700 flex items-center px-12">
+        <nav>
 
-    <div x-data="{ tab: 'users' }" class="flex-1 flex flex-col">
-      <header class="h-20 px-6 py-2 bg-cool-gray-100">
-        <div>
-          <div class="border-b border-gray-200">
-            <nav class="-mb-px flex">
-              <a :class="
-                  tab === 'users'
-                  ? ' border-blue-500 text-blue-600 focus:text-blue-800 focus:border-blue-700'
-                  : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:text-gray-700 focus:border-gray-300'"
-                @click="tab = 'users'" href="#"
-                class="w-1/4 py-4 px-1 text-center border-b-2 font-medium text-sm leading-5 focus:outline-none"
-                aria-current="page">
-                Gebruikers
-              </a>
-              <a :class="
-                  tab === 'projects'
-                  ? ' border-blue-500 text-blue-600 focus:text-blue-800 focus:border-blue-700'
-                  : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:text-gray-700 focus:border-gray-300'"
-                @click="tab = 'projects'" href="#"
-                class="w-1/4 py-4 px-1 text-center border-b-2 font-medium text-sm leading-5">
-                Projecten
-              </a>
-            </nav>
-          </div>
-        </div>
-      </header>
+        </nav>
+    </header>
 
-      <main class="flex-1 px-6">
-        Hello World!
-      </main>
 
-      <!-- <footer class="h-20 flex items-center px-6 bg-white">Footer</footer> -->
-      <footer>
-        @@include('./_imports/alpine-footer.html')
-      </footer>
-    </div>
   </div>
 
-  <!-- Template Header -->
-  <!-- @@include('./_imports/header_template.html') -->
-
-  <!-- Template Sidebar -->
-  <!-- @@include('./_imports/sidebar_template.html') -->
 
   <!-- Alpine.js dependencies -->
   <script src="./_imports/alpine_func_footer.min.js"></script>

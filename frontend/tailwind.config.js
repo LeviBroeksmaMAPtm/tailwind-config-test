@@ -14,12 +14,12 @@ module.exports = {
       red: colors.red,
       blue: colors.sky,
       yellow: colors.amber,
-      teal: colors.teal,
       green: colors.emerald,
       orange: colors.orange,
       indigo: colors.indigo,
       pink: colors.pink,
-      purple: colors.purple
+      purple: colors.purple,
+      violet: colors.violet
     },
     extend: {
       colors: {
