@@ -1,5 +1,8 @@
 /* purgecss start ignore */
 @tailwind base;
+* {
+    @apply box-border;
+}
 
 /* Your own custom base styles */
 /* h1 { ... } */

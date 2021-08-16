@@ -11,6 +11,11 @@
 
   <title>Tailwind CSS - MAPtm template</title>
 
+  <!-- Leaflet -->
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
   <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
@@ -52,17 +57,20 @@
 
 <body data-app="home" class="bg-violet-50 min-h-screen ">
   <!-- application header -->
-  <div class="flex" x-data="{show: false}" >
-    <header class="w-full h-24 flex items-center px-8 justify-end bg-gradient-to-bl from-gray-900 to-gray-700  lg:px-16 xl:px-24 shadow-lg">
+  <div class="flex" x-data="{show: false}">
+    <header
+      class="w-full h-24 flex items-center px-8 justify-end bg-gradient-to-bl from-gray-900 to-gray-700  lg:px-16 xl:px-24 shadow-lg">
       <!-- mobile menu -->
       <div class="sm:hidden">
         <button class="text-violet-400 hover:text-violet-200 transition duration-200" @click="show = ! show">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
           </svg>
         </button>
         <div class="flex w-full absolute left-0 top-24" x-show="show" @click.away="show = false">
-          <nav class="w-full flex  bg-gradient-to-bl from-violet-900 to-violet-700 transition-all duration-300">
+          <nav
+            class="w-full flex  bg-gradient-to-bl from-violet-900 to-violet-700 transition-all duration-300 z-10 shadow-2xl">
             <ul class="text-white px-2 py-4 w-full">
               <li class="p-4 w-full hover:bg-violet-300 hover:text-gray-700 rounded-md bg-opacity-80 cursor-pointer">
                 <a href="#" class="w-full">Test 1</a>
@@ -74,7 +82,7 @@
                 <a href="#" class="w-full">Test 3</a>
               </li>
               <li class="p-4 w-full hover:bg-violet-300 hover:text-gray-700 rounded-md bg-opacity-80 cursor-pointer">
-                <a href="#" class="w-full">Test 4</a>
+                <a href="#" class="w-full">Contact</a>
               </li>
             </ul>
           </nav>
@@ -94,7 +102,7 @@
               <a href="#" class="hover:text-violet-300">Test 3</a>
             </li>
             <li class="pl-4">
-              <a href="#" class="hover:text-violet-300">Test 4</a>
+              <a href="#" class="hover:text-violet-300">Contact</a>
             </li>
           </ul>
         </nav>
@@ -102,8 +110,16 @@
     </header>
   </div>
 
+  <!-- LEAFLET MAP TEST -->
+  <div class="p-8">
+    <h1 class="text-3xl text-center font-bold text-maptm-orange uppercase">Our location</h1>
+  </div>
+  <div id="map" class="absolute top-48 bottom-64 left-0 right-0 z-0">
 
-  <div class="w-full p-8">
+  </div>
+
+
+  <!-- <div class="w-full p-8 bg-gray-50">
     <section class="grid grid-cols-5 justify-between">
       <div class="h-40 w-40 bg-violet-900 rounded-xl col-span-2">
 
@@ -113,11 +129,48 @@
         <h5 class="text-gray=500 italic">Front-end developer</h5>
       </div>
     </section>
-  </div>
+  </div> -->
 
 
   <!-- Alpine.js dependencies -->
+  <script src="./leaflet.js"></script>
+  <script>
+
+    const geoUtrecht = [52.07025598000335, 5.0762239656280075];
+    const geoHilversum = [52.221538413961596, 5.1686985984781];
+
+    const map = L.map('map').setView(geoUtrecht, 10); // set center and zoom lvl initial map
+
+    let customMarker = `<svg xmlns="http://www.w3.org/2000/svg" class=" h-8 w-8 text-maptm-orange" viewBox="0 0 20 20" fill="currentColor">
+    <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+    </svg>`;
+
+    const atributionCard = '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>';
+
+    L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=tZS8oEMabH7RTxEUbJxB', {
+      attribution: atributionCard,
+    }).addTo(map);
+
+    const utrecht = L.marker(geoUtrecht, {
+      icon: new L.divIcon({
+        className: "",
+        iconAnchor: [12, 35],
+        popupAnchor: [10, -30],
+        html: customMarker
+      })
+    })
+      .bindPopup('This is the MAPtm location'),
+      hilversum = L.marker(geoHilversum).bindPopup('This is where I live');
+
+    const cities = L.layerGroup([utrecht, hilversum]).addTo(map);
+
+
+
+
+  </script>
+
   <script src="./_imports/alpine_func_footer.min.js"></script>
+
   <!-- <script src="./alpine_func_users.min.js"></script> -->
   <!-- <script src="./alpine_func_projects.min.js"></script> -->
 </body>
