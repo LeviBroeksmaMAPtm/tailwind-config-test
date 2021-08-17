@@ -127,16 +127,62 @@
   </header>
 
   <div class="container mt-16">
-    <h1 class="text-center text-cyan-600 text-4xl font-poppins font-bold">Hier komt meer...</h1>
-    <div class="container">
-      <canvas id="mychart">
+
+    <h1 class="text-center text-cyan-600 text-4xl font-poppins font-bold mb-8" >Mastery</h1>
+
+    <div class="container border-2 border-cyan-900 bg-cyan-50 p-4 pt-8 rounded-lg">
+      <canvas id="myChart">
 
       </canvas>
     </div>
   </div>
 
+  <script>
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var myChart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['HTML5', 'CSS3', 'JavaScript', 'Java', 'Spring Boot', 'Tailwind CSS', 'Alpine.js', 'React.js'],
+        datasets: [{
+          data: [90, 75, 30, 15, 15, 50, 40, 35], // 350 total
+          backgroundColor: [
+
+            'rgba(103, 232, 249, 1)'
+
+
+          ],
+          borderColor: [
+            'rgba(21, 94, 117, 1)'
+          ],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        scales: {
+          x: {
+            grid: {
+              display: false
+            }
+          },
+          y: {
+            beginAtZero: true,
+            display: false
+          }
+        },
+        plugins: {
+          legend: {
+            display: false
+          }
+        }
+      }
+    });
+  </script>
+
   <!-- Alpine.js dependencies -->
   <script src="./_imports/alpine_func_footer.min.js"></script>
+  <script>
+
+  </script>
 </body>
 
 </html>
