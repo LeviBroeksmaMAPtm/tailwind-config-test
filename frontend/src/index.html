@@ -27,6 +27,10 @@
   <meta name="msapplication-config" content="/icons/browserconfig.xml">
   <meta name="theme-color" content="#ffffff">
 
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
   <!-- Configuration -->
   <script defer src="./config.min.js" inline></script>
 
@@ -55,120 +59,187 @@
 
 </head>
 
-<body data-app="home" class="bg-violet-50 min-h-screen ">
+<body data-app="home" class="bg-violet-50 min-h-screen relative">
   <!-- application header -->
-  <div class="flex" x-data="{show: false}">
-    <header
-      class="w-full h-24 flex items-center px-8 justify-end bg-gradient-to-bl from-gray-900 to-gray-700  lg:px-16 xl:px-24 shadow-lg">
-      <!-- mobile menu -->
-      <div class="sm:hidden">
-        <button class="text-violet-400 hover:text-violet-200 transition duration-200" @click="show = ! show">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24"
-            stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
-        </button>
-        <div class="flex w-full absolute left-0 top-24" x-show="show" @click.away="show = false">
-          <nav
-            class="w-full flex  bg-gradient-to-bl from-violet-900 to-violet-700 transition-all duration-300 z-10 shadow-2xl">
-            <ul class="text-white px-2 py-4 w-full">
-              <li class="p-4 w-full hover:bg-violet-300 hover:text-gray-700 rounded-md bg-opacity-80 cursor-pointer">
-                <a href="#" class="w-full">Test 1</a>
-              </li>
-              <li class="p-4 w-full hover:bg-violet-300 hover:text-gray-700 rounded-md bg-opacity-80 cursor-pointer">
-                <a href="#" class="w-full">Test 2</a>
-              </li>
-              <li class="p-4 w-full hover:bg-violet-300 hover:text-gray-700 rounded-md bg-opacity-80 cursor-pointer">
-                <a href="#" class="w-full">Test 3</a>
-              </li>
-              <li class="p-4 w-full hover:bg-violet-300 hover:text-gray-700 rounded-md bg-opacity-80 cursor-pointer">
-                <a href="#" class="w-full">Contact</a>
-              </li>
-            </ul>
-          </nav>
+
+  <header>
+    <div class=" bg-gradient-to-bl from-gray-900 to-gray-700 py-4 font-poppins text-cyan-300" x-data="{show: false}">
+      <!-- MOBILE MENU -->
+      <div class="sm:hidden transition duration-300">
+        <div class="container flex justify-between relative">
+          <div>
+            <a href="/">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-cyan-400" viewBox="0 0 20 20"
+                fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M7 2a1 1 0 00-.707 1.707L7 4.414v3.758a1 1 0 01-.293.707l-4 4C.817 14.769 2.156 18 4.828 18h10.343c2.673 0 4.012-3.231 2.122-5.121l-4-4A1 1 0 0113 8.172V4.414l.707-.707A1 1 0 0013 2H7zm2 6.172V4h2v4.172a3 3 0 00.879 2.12l1.027 1.028a4 4 0 00-2.171.102l-.47.156a4 4 0 01-2.53 0l-.563-.187a1.993 1.993 0 00-.114-.035l1.063-1.063A3 3 0 009 8.172z"
+                  clip-rule="evenodd" />
+              </svg>
+            </a>
+          </div>
+          <button @click="show = ! show">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
         </div>
-      </div>
-      <!-- desktop menu -->
-      <div class="hidden sm:block text-white font-medium text-lg tracking-wide">
-        <nav>
-          <ul class="flex">
-            <li class="px-4">
-              <a href="#" class="hover:text-violet-300">Test 1</a>
-            </li>
-            <li class="px-4">
-              <a href="#" class="hover:text-violet-300">Test 2</a>
-            </li>
-            <li class="px-4">
-              <a href="#" class="hover:text-violet-300">Test 3</a>
-            </li>
-            <li class="pl-4">
-              <a href="#" class="hover:text-violet-300">Contact</a>
-            </li>
-          </ul>
+        <nav x-show="show" class="container py-3 flex flex-col absolute bg-blue-700 w-full mt-4 z-10">
+          <a href="/" class="p-4 w-full hover:bg-cyan-900 hover:text-white rounded-md bg-opacity-80 cursor-pointer">
+            <span>Home</span>
+          </a>
+          <a href="/about"
+            class="p-4 w-full hover:bg-cyan-900 hover:text-white rounded-md bg-opacity-80 cursor-pointer">
+            <span>About</span>
+          </a>
+          <a href="/contact"
+            class="p-4 w-full hover:bg-cyan-900 hover:text-white rounded-md bg-opacity-80 cursor-pointer">
+            <span>Contact</span>
+          </a>
         </nav>
       </div>
-    </header>
-  </div>
+      <!-- DESKTOP MENU -->
+      <div class="hidden sm:flex justify-between container transition duration-300">
 
-  <!-- LEAFLET MAP TEST -->
-  <div class="p-8">
-    <h1 class="text-3xl text-center font-bold text-maptm-orange uppercase">Our location</h1>
-  </div>
-  <div id="map" class="absolute top-48 bottom-64 left-0 right-0 z-0">
-
-  </div>
-
-
-  <!-- <div class="w-full p-8 bg-gray-50">
-    <section class="grid grid-cols-5 justify-between">
-      <div class="h-40 w-40 bg-violet-900 rounded-xl col-span-2">
-
+        <div class="flex items-center">
+          <a href="/">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-cyan-400" viewBox="0 0 20 20"
+              fill="currentColor">
+              <path fill-rule="evenodd"
+                d="M7 2a1 1 0 00-.707 1.707L7 4.414v3.758a1 1 0 01-.293.707l-4 4C.817 14.769 2.156 18 4.828 18h10.343c2.673 0 4.012-3.231 2.122-5.121l-4-4A1 1 0 0113 8.172V4.414l.707-.707A1 1 0 0013 2H7zm2 6.172V4h2v4.172a3 3 0 00.879 2.12l1.027 1.028a4 4 0 00-2.171.102l-.47.156a4 4 0 01-2.53 0l-.563-.187a1.993 1.993 0 00-.114-.035l1.063-1.063A3 3 0 009 8.172z"
+                clip-rule="evenodd" />
+            </svg>
+          </a>
+        </div>
+        <nav class="flex items-center">
+          <a href="/"
+            class="p-4 w-full hover:bg-cyan-900 hover:text-white rounded-md bg-opacity-80 cursor-pointer"><span>Home</span></a>
+          <a href="/about"
+            class="p-4 w-full hover:bg-cyan-900 hover:text-white rounded-md bg-opacity-80 cursor-pointer"><span>About</span></a>
+          <a href="/contact"
+            class="p-4 w-full hover:bg-cyan-900 hover:text-white rounded-md bg-opacity-80 cursor-pointer"><span>Contact</span></a>
+        </nav>
       </div>
-      <div class="col-span-3 flex flex-col justify-center">
-        <h1 class="text-2xl font-bold"><span class="inline text-violet-700">Levi</span> <span class="inline text-gray-800">Broeksma</span></h1>
-        <h5 class="text-gray=500 italic">Front-end developer</h5>
+    </div>
+  </header>
+  <!-- IMAGE HEADER  -->
+  <div class="relative h-64 overflow-hidden flex justify-center items-center z-0">
+    <img src="img/amsterdam.jpg" alt="Amsterdam at night" class="z-0">
+    <div class="absolute">
+      <div class="bg-blue-600 bg-opacity-50 rounded-lg p-4">
+        <h1 class="font-bold font-poppins text-4xl text-center">
+          <span class="text-white">Levi</span>
+          <span class="text-cyan-300">Broeksma</span>
+        </h1>
+        <h5 class="text-white text-center font-medium italic">
+          -- Front-end developer --
+        </h5>
       </div>
-    </section>
-  </div> -->
+    </div>
+  </div>
 
+  <div class="py-16 px-8 bg-white">
+    <div class="container flex justify-center flex-wrap max-w-3xl">
+      <h2 class="w-full text-center text-2xl font-bold text-cyan-500 mb-8">Languages</h2>
+      <div
+        class="w-32 h-32 rounded-lg shadow-xl flex justify-center items-center text-4xl text-cyan-800 m-2 flex-col bg-white">
+        <i class="fab fa-html5"></i>
+        <span class="text-lg text-gray-500 font-medium mt-2">HTML</span>
+      </div>
+      <div
+        class="w-32 h-32 rounded-lg shadow-xl flex justify-center items-center text-4xl text-cyan-800 m-2 flex-col bg-white">
+        <i class="fab fa-css3-alt"></i>
+        <span class="text-lg text-gray-500 font-medium mt-2">CSS</span>
+      </div>
+      <div
+        class="w-32 h-32 rounded-lg shadow-xl flex justify-center items-center text-4xl text-cyan-800 m-2 flex-col bg-white">
+        <i class="fab fa-js-square"></i>
+        <span class="text-lg text-gray-500 font-medium mt-2">JavaScript</span>
+      </div>
+      <div
+        class="w-32 h-32 rounded-lg shadow-xl flex justify-center items-center text-4xl text-cyan-800 m-2 flex-col bg-white">
+        <i class="fab fa-java"></i>
+        <span class="text-lg text-gray-500 font-medium mt-2">Java</span>
+      </div>
+      <div
+        class="w-32 h-32 rounded-lg shadow-xl flex justify-center items-center text-4xl text-cyan-800 m-2 flex-col bg-white">
+        <div class="object-cover w-10 h-10">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-14 h-14 flex-shrink-0 fill-current" viewBox="0 0 100 100">
+            <path
+              d="M58.2 3.365a29.503 29.503 0 0 1-3.419 6.064A32.094 32.094 0 1 0 9.965 55.372l1.186 1.047a32.08 32.08 0 0 0 52.67-22.253c.875-8.17-1.524-18.51-5.62-30.8zM14.53 55.558a2.744 2.744 0 1 1-.404-3.857 2.744 2.744 0 0 1 .404 3.857zm43.538-9.61c-7.92 10.55-24.83 6.99-35.672 7.502 0 0-1.922.113-3.857.43 0 0 .73-.31 1.663-.663 7.614-2.65 11.213-3.16 15.838-5.54 8.708-4.427 17.322-14.122 19.112-24.2-3.313 9.695-13.373 18.032-22.53 21.418-6.276 2.313-17.614 4.566-17.614 4.566l-.457-.245c-7.714-3.75-7.952-20.457 6.077-25.845 6.143-2.366 12.02-1.067 18.654-2.65 7.084-1.683 15.28-6.99 18.615-13.916 3.73 11.08 8.224 28.422.166 39.15z" />
+          </svg>
+        </div>
 
+        <span class="text-lg text-gray-500 font-medium mt-2">Spring Boot</span>
+      </div>
+      <div
+        class="w-32 h-32 rounded-lg shadow-xl flex justify-center items-center text-4xl text-cyan-800 m-2 flex-col bg-white">
+        <div class="object-cover w-10 h-10">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-16 h-16 flex-shrink-0 fill-current" viewBox="0 0 100 100">
+            <path
+              d="M16 25.6c2.133-8.533 7.467-12.8 16-12.8 12.8 0 14.4 9.6 20.8 11.2 4.267 1.067 8-.533 11.2-4.8C61.867 27.733 56.533 32 48 32c-12.8 0-14.4-9.6-20.8-11.2-4.267-1.067-8 .533-11.2 4.8zM0 44.8C2.133 36.267 7.467 32 16 32c12.8 0 14.4 9.6 20.8 11.2 4.267 1.067 8-.533 11.2-4.8-2.133 8.533-7.467 12.8-16 12.8-12.8 0-14.4-9.6-20.8-11.2-4.267-1.067-8 .533-11.2 4.8z" />
+          </svg>
+        </div>
+        <span class="text-lg text-gray-500 font-medium mt-2">Tailwind CSS</span>
+      </div>
+      <div
+        class="w-32 h-32 rounded-lg shadow-xl flex justify-center items-center text-4xl text-cyan-800 m-2 flex-col bg-white">
+        <div class="object-cover w-10 h-10">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-32 flex-shrink-0 fill-current" viewBox="0 0 100 100">
+            <g opacity=".8">
+              <path d="M33.71 0L11.207 22.693l.113.113h22.586l11.21-11.304z" class="opacity-30" />
+              <path d="M11.405 0l22.578 22.769-.039.037H11.209L0 11.502z" />
+            </g>
+          </svg>
+        </div>
+        <span class="text-lg text-gray-500 font-medium mt-2">Alpine.js</span>
+      </div>
+      <div
+        class="w-32 h-32 rounded-lg shadow-xl flex justify-center items-center text-4xl text-cyan-800 m-2 flex-col bg-white">
+        <i class="fab fa-react"></i>
+        <span class="text-lg text-gray-500 font-medium mt-2">React.js</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- TEMP SVG LOCATION -->
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1"
+  x="0px" y="0px" width="192px" height="192px" viewBox="0 0 192 192" enable-background="new 0 0 192 192"
+  xml:space="preserve">
+  <path class="fill-current text-cyan-800"
+    d="M161.271,96.556c-22.368,0.439-17.709,14.599-33.473,18.18c-16.014,3.638-18.542-39.111-34.552-39.111  c-16.012,0-19.559,41.526-39.608,70.034l-0.572,0.807l42.985,24.813l65.22-37.651V96.556z" />
+  <path class="fill-current text-cyan-800 text-opacity-50"
+    d="M161.271,95.267c-7.488-9.61-12.567-20.658-23.494-20.658c-19.337,0-14.249,31.545-35.62,31.545  c-21.373,0-23.62-33.931-47.832-2.035c-7.715,10.163-13.925,21.495-18.803,32.218l60.529,34.943l65.22-37.651V95.267z" />
+  <path opacity="0.8" class="fill-current text-cyan-800 text-opacity-50"
+    d="M30.829,108.334c7.338-20.321,10.505-36.779,24.514-36.779  c21.371,0,26.458,60.039,44.779,53.931c18.318-6.105,16.282-38.669,44.779-38.669c5.424,0,10.962,3.323,16.371,8.698v38.113  l-65.22,37.651l-65.222-37.651V108.334z" />
+  <path class="fill-current text-cyan-900"
+    d="M96,176l-69.292-39.999V56L96,16l69.292,40v80L96,176z M34.849,131.301L96,166.602l61.151-35.301V60.7  L96,25.399L34.849,60.7V131.301z" />
+</svg>
+  <!-- LINKS TO ONLINE CONTACT -->
+  <div class="py-16 px-8 bg-cyan-50 bg-opacity-30">
+    <h2 class="w-full text-center text-2xl font-bold text-cyan-500 mb-8">Get in touch</h2>
+    <div class="container flex justify-center flex-wrap max-w-3xl">
+      <div
+        class="w-32 h-32 rounded-lg shadow-xl hover:shadow-lg flex justify-center items-center text-4xl text-cyan-800 m-2 flex-col bg-white transform hover:translate-y-1 transition duration-300 cursor-pointer">
+        <i class="fab fa-github"></i>
+        <span class="text-lg text-gray-500 font-medium mt-2">Github</span>
+      </div>
+      <div
+        class="w-32 h-32 rounded-lg shadow-xl hover:shadow-lg flex justify-center items-center text-4xl text-cyan-800 m-2 flex-col bg-white transform hover:translate-y-1 transition duration-300 cursor-pointer">
+        <i class="fab fa-linkedin-in"></i>
+        <span class="text-lg text-gray-500 font-medium mt-2">LinkedIn</span>
+      </div>
+      <div
+        class="w-32 h-32 rounded-lg shadow-xl hover:shadow-lg flex justify-center items-center text-4xl text-cyan-800 m-2 flex-col bg-white transform hover:translate-y-1 transition duration-300 cursor-pointer">
+        <i class="fas fa-envelope"></i>
+        <span class="text-lg text-gray-500 font-medium mt-2">Mail</span>
+      </div>
+    </div>
+  </div>
+  <div class="bg-gray-700 py-2 text-white text-center text-sm">
+    <span>&copy; 2020 | All rights reserved | Levi Broeksma Design</span>
+  </div>
   <!-- Alpine.js dependencies -->
-  <script src="./leaflet.js"></script>
-  <script>
-
-    const geoUtrecht = [52.07025598000335, 5.0762239656280075];
-    const geoHilversum = [52.221538413961596, 5.1686985984781];
-
-    const map = L.map('map').setView(geoUtrecht, 10); // set center and zoom lvl initial map
-
-    let customMarker = `<svg xmlns="http://www.w3.org/2000/svg" class=" h-8 w-8 text-maptm-orange" viewBox="0 0 20 20" fill="currentColor">
-    <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
-    </svg>`;
-
-    const atributionCard = '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>';
-
-    L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=tZS8oEMabH7RTxEUbJxB', {
-      attribution: atributionCard,
-    }).addTo(map);
-
-    const utrecht = L.marker(geoUtrecht, {
-      icon: new L.divIcon({
-        className: "",
-        iconAnchor: [12, 35],
-        popupAnchor: [10, -30],
-        html: customMarker
-      })
-    })
-      .bindPopup('This is the MAPtm location'),
-      hilversum = L.marker(geoHilversum).bindPopup('This is where I live');
-
-    const cities = L.layerGroup([utrecht, hilversum]).addTo(map);
-
-
-
-
-  </script>
-
   <script src="./_imports/alpine_func_footer.min.js"></script>
 
   <!-- <script src="./alpine_func_users.min.js"></script> -->

@@ -7,6 +7,16 @@ module.exports = {
     // purgeLayersByDefault: true,
   },
   theme: {
+    container: {
+      center: true,
+      padding: "1rem",
+      screens: {
+        "2xl": "1280px"
+      }
+    },
+    fontFamily: {
+      poppins: ["Poppins, sans-serif"]
+    },
     colors: {
       // Build your palette here
       white: colors.white,
@@ -19,7 +29,8 @@ module.exports = {
       indigo: colors.indigo,
       pink: colors.pink,
       purple: colors.purple,
-      violet: colors.violet
+      violet: colors.violet,
+      cyan: colors.cyan,
     },
     extend: {
       colors: {
